@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <table>
+            <tr>
+                <th>id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Contact</th>
+                <th>Address</th>
+            </tr>
+            {% for mydata in data.data %}
+            {% comment %} data.data me jo second data likha hai wah api ka name hai  {% endcomment %}
+            <tr>
+                <td>{{mydata.id}}</td>
+                <td>{{mydata.Name}}</td>
+                <td>{{mydata.Email}}</td>
+                <td>{{mydata.Contact}}</td>
+                <td>{{mydata.Address}}</td>
+            </tr>    
+                {% endfor %}
+        </table>
+    </form>
+</body>
+</html>
