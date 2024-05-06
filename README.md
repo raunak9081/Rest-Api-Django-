@@ -1,3 +1,2 @@
 # myproject
-this is my first project<br>
-Author- raunak
+Rest Api with  python django
